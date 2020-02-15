@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,14 @@
 		606F8A3823F582F20069BAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606F8A3623F582F20069BAF9 /* LaunchScreen.storyboard */; };
 		606F8A4323F582F30069BAF9 /* CityExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F8A4223F582F30069BAF9 /* CityExplorerTests.swift */; };
 		606F8A4E23F582F30069BAF9 /* CityExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F8A4D23F582F30069BAF9 /* CityExplorerUITests.swift */; };
+		606F8A6223F585810069BAF9 /* MyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F8A6123F585810069BAF9 /* MyMap.swift */; };
+		606F8A6623F84DE40069BAF9 /* PhotoGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F8A6523F84DE40069BAF9 /* PhotoGrid.swift */; };
+		606F8A6923F84F3E0069BAF9 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 606F8A6823F84F3E0069BAF9 /* QGrid */; };
+		606F8A6B23F8507C0069BAF9 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F8A6A23F8507C0069BAF9 /* ImageCell.swift */; };
+		606F8A6D23F855D20069BAF9 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F8A6C23F855D20069BAF9 /* APIHelper.swift */; };
+		606F8A7023F857800069BAF9 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 606F8A6F23F857800069BAF9 /* AlamofireImage */; };
+		606F8A7223F857970069BAF9 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F8A7123F857970069BAF9 /* DownloadManager.swift */; };
+		606F8A7423F865260069BAF9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F8A7323F865260069BAF9 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,12 @@
 		606F8A4923F582F30069BAF9 /* CityExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		606F8A4D23F582F30069BAF9 /* CityExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityExplorerUITests.swift; sourceTree = "<group>"; };
 		606F8A4F23F582F30069BAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		606F8A6123F585810069BAF9 /* MyMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMap.swift; sourceTree = "<group>"; };
+		606F8A6523F84DE40069BAF9 /* PhotoGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGrid.swift; sourceTree = "<group>"; };
+		606F8A6A23F8507C0069BAF9 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		606F8A6C23F855D20069BAF9 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		606F8A7123F857970069BAF9 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		606F8A7323F865260069BAF9 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606F8A6923F84F3E0069BAF9 /* QGrid in Frameworks */,
+				606F8A7023F857800069BAF9 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +120,11 @@
 				606F8A2823F582EF0069BAF9 /* AppDelegate.swift */,
 				606F8A2A23F582EF0069BAF9 /* SceneDelegate.swift */,
 				606F8A2F23F582EF0069BAF9 /* ContentView.swift */,
+				606F8A6523F84DE40069BAF9 /* PhotoGrid.swift */,
+				606F8A6C23F855D20069BAF9 /* APIHelper.swift */,
+				606F8A7523F867780069BAF9 /* Managers */,
+				606F8A6A23F8507C0069BAF9 /* ImageCell.swift */,
+				606F8A6123F585810069BAF9 /* MyMap.swift */,
 				606F8A3123F582F20069BAF9 /* Assets.xcassets */,
 				606F8A3623F582F20069BAF9 /* LaunchScreen.storyboard */,
 				606F8A3923F582F20069BAF9 /* Info.plist */,
@@ -139,6 +160,15 @@
 			path = CityExplorerUITests;
 			sourceTree = "<group>";
 		};
+		606F8A7523F867780069BAF9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				606F8A7323F865260069BAF9 /* LocationManager.swift */,
+				606F8A7123F857970069BAF9 /* DownloadManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +185,10 @@
 			dependencies = (
 			);
 			name = CityExplorer;
+			packageProductDependencies = (
+				606F8A6823F84F3E0069BAF9 /* QGrid */,
+				606F8A6F23F857800069BAF9 /* AlamofireImage */,
+			);
 			productName = CityExplorer;
 			productReference = 606F8A2523F582EF0069BAF9 /* CityExplorer.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +261,10 @@
 				Base,
 			);
 			mainGroup = 606F8A1C23F582EF0069BAF9;
+			packageReferences = (
+				606F8A6723F84F3E0069BAF9 /* XCRemoteSwiftPackageReference "QGrid" */,
+				606F8A6E23F857800069BAF9 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 606F8A2623F582EF0069BAF9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,10 +308,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606F8A6D23F855D20069BAF9 /* APIHelper.swift in Sources */,
+				606F8A7223F857970069BAF9 /* DownloadManager.swift in Sources */,
 				606F8A2E23F582EF0069BAF9 /* CityExplorer.xcdatamodeld in Sources */,
+				606F8A7423F865260069BAF9 /* LocationManager.swift in Sources */,
 				606F8A2923F582EF0069BAF9 /* AppDelegate.swift in Sources */,
 				606F8A3023F582EF0069BAF9 /* ContentView.swift in Sources */,
+				606F8A6223F585810069BAF9 /* MyMap.swift in Sources */,
 				606F8A2B23F582EF0069BAF9 /* SceneDelegate.swift in Sources */,
+				606F8A6B23F8507C0069BAF9 /* ImageCell.swift in Sources */,
+				606F8A6623F84DE40069BAF9 /* PhotoGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +642,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		606F8A6723F84F3E0069BAF9 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+		606F8A6E23F857800069BAF9 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		606F8A6823F84F3E0069BAF9 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 606F8A6723F84F3E0069BAF9 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+		606F8A6F23F857800069BAF9 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 606F8A6E23F857800069BAF9 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		606F8A2C23F582EF0069BAF9 /* CityExplorer.xcdatamodeld */ = {
